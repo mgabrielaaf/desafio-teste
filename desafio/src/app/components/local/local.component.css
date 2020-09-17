@@ -1,0 +1,15 @@
+.flex {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex img {
+  width: 35vw;
+}
+
+button {
+background-color: lightgray;
+}
