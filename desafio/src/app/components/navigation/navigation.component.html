@@ -6,9 +6,9 @@
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/">Incio</a>
-      <a mat-list-item routerLink="/locais">Locais</a>
-      <a mat-list-item routerLink="/culinaria">Culinária</a>
-      <a mat-list-item routerLink="/contato">Agende Já</a>
+      <a mat-list-item routerLink="locais">Locais</a>
+      <a mat-list-item routerLink="culinaria">Culinária</a>
+      <a mat-list-item routerLink="contato">Agende Já</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -23,6 +23,6 @@
       </button>
       <span>desafio</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
