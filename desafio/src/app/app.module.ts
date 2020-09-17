@@ -5,16 +5,56 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StartPageComponent } from './components/start-page/start-page.component';
+import { GridComponent } from './components/grid/grid.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MarcoZeroComponent } from './components/marco-zero/marco-zero.component';
+import { HomemDoNordesteComponent } from './components/homem-do-nordeste/homem-do-nordeste.component';
+import { BrennandComponent } from './components/brennand/brennand.component';
+import { LocaisComponent } from './components/locais/locais.component';
+import { LocalComponent } from './components/local/local.component';
+import { FormComponent } from './components/form/form.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CulinariaComponent } from './components/culinaria/culinaria.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartPageComponent
+    StartPageComponent,
+    GridComponent,
+    NavigationComponent,
+    MarcoZeroComponent,
+    HomemDoNordesteComponent,
+    BrennandComponent,
+    LocaisComponent,
+    LocalComponent,
+    FormComponent,
+    CulinariaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
