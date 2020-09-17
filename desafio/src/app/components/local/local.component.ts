@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalComponent implements OnInit {
 
+  address:string = 'Marco Zero';
+  image:string = 'https://media-cdn.tripadvisor.com/media/photo-s/18/00/2e/31/recife.jpg';
+
   constructor() { }
 
   ngOnInit(): void {
