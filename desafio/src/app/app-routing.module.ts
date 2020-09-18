@@ -6,6 +6,7 @@ import { FormComponent } from './components/form/form.component';
 import { HomemDoNordesteComponent } from './components/homem-do-nordeste/homem-do-nordeste.component';
 import { LocaisComponent } from './components/locais/locais.component';
 import { LocalComponent } from './components/local/local.component';
+import { MarcoZeroComponent } from './components/marco-zero/marco-zero.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { StartPageComponent } from './components/start-page/start-page.component';
 
@@ -20,10 +21,12 @@ const routes: Routes = [
     component: LocalComponent},
     {path:'locais',
     component: LocaisComponent},
-    {path:'brennand',
+    {path:'locais/brennand',
     component: BrennandComponent},
-    {path:'homem-do-nordeste',
+    {path:'locais/homem-do-nordeste',
     component: HomemDoNordesteComponent},
+    {path:'locais/marco-zero',
+    component: MarcoZeroComponent},
     {path:'contato',
     component: FormComponent}
   ]},

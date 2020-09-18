@@ -1,5 +1,6 @@
 body {
   background-color: burlywood;
+  height: 90vh;
 }
 
 h1 {
@@ -23,7 +24,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2vh 0 2vh 0;
-  margin-top: 53vh;
+  height: 6vh;
 }
 
 button {
