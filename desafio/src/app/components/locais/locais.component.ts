@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LocaisApi } from 'src/app/services/locais-api';
+import { LocaisApiService } from 'src/app/services/locais-api.service';
 
 @Component({
   selector: 'app-locais',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocaisComponent implements OnInit {
 
-  constructor() { }
+
+  locaisLista:LocaisApi[];
+
+
+  constructor(private locaisPriv:LocaisApiService) { }
 
   ngOnInit(): void {
+    this.locaisPriv.List().subscribe( (lista) => {this.locaisLista=lista;}  )
   }
 
 }
