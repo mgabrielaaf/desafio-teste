@@ -10,6 +10,8 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class NavigationComponent {
 
+  bandeira:string = 'https://3.bp.blogspot.com/-iz6ba7PwK_g/VINn9zXBdNI/AAAAAAAABRg/gSuP-3QquWU/w1200-h630-p-k-no-nu/483773_162088093947032_448785322_nn.png';
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
